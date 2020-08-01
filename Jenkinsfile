@@ -15,7 +15,7 @@ pipeline {
 
         stage('Python :: Run docker' ){
             steps{
-                    sh 'docker run --name appy -d -p 4200:80 my-new-python'
+                    sh 'docker run --name appy -d --rm -p 4200:80 my-new-python'
                 }
             }
   }
